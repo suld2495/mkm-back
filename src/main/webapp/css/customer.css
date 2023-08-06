@@ -1,0 +1,416 @@
+.customer .customer-text {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.customer .customer-text h3 {
+  font-size: 23px;
+  margin-bottom: 30px;
+  word-break: keep-all;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.customer .customer-text .color {
+  color: var(--main-color);
+  margin-left: 5px;
+}
+
+.customer .customer-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.customer .form {
+  margin-top: 68px;
+  margin-bottom: 118px;
+}
+
+.customer .form .row {
+  display: flex;
+  gap: 20px;
+}
+
+.customer .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.customer .form-item {
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.customer .form .label {
+  width: 175px;
+  display: flex;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding-top: 19px;
+}
+
+.customer .form .input {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  padding-right: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customer .form .errors {
+  color: red;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.customer .form .input input:not([type=radio]):not([type=checkbox]),
+.customer .form textarea {
+  width: 100%;
+  outline: none;
+  background: transparent;
+  border: none;
+  color: #222;
+  font-size: 16px;
+  height: 28px;
+  font-family: 'Noto sans-serif';
+  letter-spacing: -1px;
+}
+
+.customer .form .input input:not([type=radio]):not([type=checkbox]):placeholder,
+.customer .form textarea:placeholder {
+  color: #c2c2c2;
+}
+
+.customer .form textarea {
+  min-height: 300px;
+  margin: 10px 0;
+  resize: vertical;
+}
+
+.customer .form .checkbox .label {
+  padding-bottom: 19px;
+}
+
+.customer .form-item.checkbox .input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.customer .form-item.checkbox .input label {
+  width: calc(100% / 5);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: #222;
+}
+
+.customer .form .form-item.checkbox .input input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 1px solid #cacaca;
+  border-radius: 1px;
+  appearance: none;
+  background: #fff;
+}
+
+.customer .form .form-item.checkbox .input input[type=checkbox]:checked {
+  background: #fff url(/images/customer/check.png) center no-repeat;
+}
+
+.customer .form .form-item.checkbox .input input {
+  width: 100px;
+  background: #fff;
+  border: 1px solid #cacaca;
+  height: 23px;
+}
+
+.customer .form .form-item.agree .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.customer .form .form-item.email .label + div {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.customer .form .email .input input {
+  flex: 1;
+}
+
+.customer .form .email .input input + span {
+  width: 30%;
+}
+
+.customer .form .email .input input ~ select {
+  width: 30%;
+  height: 42px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.customer .form .form-item.email .input {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+}
+
+.customer .form .form-item.agree .input button {
+  width: 118px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #222;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid #222;
+}
+
+.customer .form .form-item.agree .input div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.customer .form .form-item.agree .input > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.customer .form .form-item.agree .input div input {
+  display: none;
+}
+
+.customer .form .form-item.agree .input div label {
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  border: 1px solid #707070;
+  display: block;
+}
+
+.customer .form-item.agree .input {
+  padding: 0;
+  padding-right: 20px;
+}
+
+.customer .form .form-item.agree .input div :checked + label {
+  background: url(/images/customer/check.png) center no-repeat;
+}
+
+.customer .form .form-item.agree .input div p {
+  margin-top: -2px;
+  word-break: keep-all;
+  flex: 1;
+}
+
+[type="submit"] {
+  width: 168px;
+  height: 54px;
+  border: none;
+  background: var(--main-color);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.customer .form .select .input {
+  padding: 0;
+  padding-right: 20px;
+}
+
+.customer .form .select .input select {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.customer .text {
+  margin-top: 30px;
+  font-size: 21px;
+  color: var(--main-color);
+  font-weight: bold;
+  position: relative;
+  padding-left: 20px;
+}
+
+.customer .form .text:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--main-color);
+}
+
+.customer .form .store .input {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+}
+
+.customer .form .store .input div {
+  display: flex;
+  align-items: center;
+}
+
+.customer .form .row .store .input div {
+  flex: 1;
+  width: 100%;
+}
+
+.customer .form .row .store .input {
+  gap: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.customer .form .radio .input label {
+  flex: 1;
+}
+
+[name="productText"] + .errors {
+  flex: 1;
+  margin-top: 0 !important;
+}
+
+.customer .form-item.checkbox .input label:last-child {
+  flex: 1;
+}
+
+@media screen and (max-width: 1300px) {
+  .customer section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer .form .row {
+    flex-direction: column;
+  }
+
+  .customer .form .store .input {
+    gap: 13px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .customer .form .label {
+    width: 100px;
+    font-size: 14px;
+    word-break: keep-all;
+    padding-left: 15px;
+  }
+
+  .customer .form-item.checkbox .input label {
+    width: calc(100% / 3);
+    height: 30px;
+  }
+
+  .customer .form-item.checkbox .input label:last-child {
+    width: 100%;
+  }
+
+  .customer .form .agree .label {
+    word-break: break-all;
+    width: 100%;
+  }
+  
+  .customer .form .form-item.agree .input > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .customer .form textarea {
+    min-height: 200px;
+  }
+
+  .customer .form .email .input input + span {
+    width: 20px;
+    text-align: center;
+  }
+
+  .customer .form .store .input {
+    flex-wrap: wrap;
+  }
+  
+  .customer .form .store .input div {
+    width: calc(50% - 7px);
+  }
+
+  .customer .customer-text p {
+    font-size: 17px;
+  }
+
+  .estimate .step {margin-top: 47px !important;}
+  
+  .customer .form {
+    margin-top: 48px;
+  }
+
+  .customer .form-item.agree {
+    flex-direction: column;
+  }
+
+  .customer .form .form-item.agree .input {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .customer .form .form-item.agree .input div p {
+    font-size: 14px;
+  }
+
+  .customer .form .form-item.agree .input > div {
+    gap: 12px;
+  }
+  
+  .customer .form-item.checkbox:nth-child(3) .input label {
+    width: 50%;
+  }
+
+  .customer .form .input input:not([type=radio]):not([type=checkbox]), .customer .form textarea {
+    font-size: 14px;
+  }
+}

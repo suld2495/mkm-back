@@ -1,0 +1,114 @@
+
+.navOpen{overflow:hidden;text-indent:-9999px;width:70px;height:58px;background:url(../image/common/spr_layout.png) no-repeat -130px 20px}
+.navLink{display:inline-block;padding:0 15px;color:#fff;font-size:18px;font-weight:500;line-height:58px}
+.navLink:hover{text-decoration:none}
+.navLink:active, .navLink:visited{color:#fff}
+.navArea{display:none;position:fixed;top:0;right:0;width:100%;height:100%;z-index:100;text-align:center;background:#000;opacity:0;transition:0.5s;}
+.navArea .inner{position:absolute;top:50%;left:50%;transition:0.7s;opacity:0;width: 100%;max-width: 1410px;transform: translate(-50%, -50%);padding: 0 20px;}
+.navArea.navON{display:block;opacity:1;z-index: 1000000;}
+.navArea.navON .inner{opacity:1;}
+.gnbList li{z-index:1;display: flex;align-items: center;}
+.gnbList li:after{content:'';display:block;clear:both}
+.gnbList li *{vertical-align:top}
+.gnbList > li > a{position:relative;display:block;float:left;color:#fff;font-size:48px;font-weight:600;text-decoration: none;}
+.gnbList li a:hover{text-decoration:none}
+.gnbList > li.gnb03 > a{}
+.gnbList > li.gnbON > a, .gnbList > li:hover > a{color: #00acfe;}
+.gnbList li .subGnb{position:relative;overflow:hidden;display: flex;float:left;height:95px;padding:10px 0 10px 0;transition:1s;-webkit-transition:1s;opacity:0;z-index:0;margin-left: 40px;}
+.gnbList li .subGnb ul{display:inline-block;padding-left:6px}
+.gnbList li .subGnb *{vertical-align:top}
+.gnbList li .subGnb:before{content:'';display:inline-block;width:171px;height:2px;margin-top:40px;background:#00acfe}
+.gnbList > li .subGnb ul li{float:left}
+.gnbList > li .subGnb ul li a{height:75px;padding:1px 12px 0;color:rgba(255,255,255,1);font-size:18px;font-weight:500;line-height:79px}
+.gnbList > li .subGnb ul li.subON a, .gnbList > li .subGnb ul li a:hover{color:#00acfe;}
+.gnbList > li .subGnb ul li.subON a{font-weight:600}
+.gnbList li:hover .subGnb, .gnbList > li.gnbON .subGnb {opacity:1;z-index:100}
+.gnbList > li.gnbON a + .subGnb{z-index:0}
+.gnbList li.gnb02 .subGnb:before{width:48px}/*20201124 171px*/
+.gnbList li.gnb03 .subGnb:before{width:58px}
+.gnbList li:hover{z-index:10}
+
+.navArea .close{overflow:hidden;text-indent:-9999px;position:absolute;top:28px;right:36px;width:64px;height:64px;background: transparent;border: none;}
+.navArea .close:before, .navArea .close:after {content: '';width: 50px;height: 2px;background: #fff;position: absolute;top: 50%;left: 0;}
+.navArea .close:before {transform: rotate(45deg);}
+.navArea .close:after {transform: rotate(135deg);}
+
+.mobile {
+    display: none;
+}
+
+.mobile nav {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  top: 80px;
+  height: 100vh !important;
+  padding: 30px 30px 0 30px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.mobile nav span {
+  position: relative;
+  display: block;
+  padding: 20px 10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mobile nav span + ul {
+  max-height: 0;
+  pointer-events: none;
+  background-color: #f6f6f6;
+  padding: 0;
+  border-top: 1px solid #e5e5e5;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.mobile nav span + ul li {
+  position: relative;
+  height: auto !important;
+  padding: 0 15px;
+}
+
+.mobile nav span + ul li a {
+  margin-left: 15px;
+  display: block;
+  margin: 0 0px;
+  text-align: left;
+}
+
+.mobile nav span + ul li:not(:first-child) a{
+  border-top: 1px solid #e5e5e5;
+}
+
+.mobile nav span + ul li a span {
+  color: #686868;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.mobile nav span + ul.active {
+  max-height: 100vh;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .navArea {
+        display: none !important;
+    }
+
+    
+    .mobile {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}

@@ -1,0 +1,145 @@
+.coupang .section01 {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.coupang .main-title h2 {
+  color: #222;
+}
+
+.coupang .section01 .main-title h2 {
+  margin-top: 39px;
+  margin-bottom: 37px;
+}
+
+.coupang .section01 .content {
+  width: 100%;
+  min-height: 196px;
+  background: var(--main-color);
+  padding: 40px 30px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.coupang .section01 .content:after,
+.coupang .section01 .content:before {
+  content: '';
+  position: absolute;
+  background: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coupang .section01 .content:before {
+  height: 150px;
+  width: 2px;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+}
+
+.coupang .section01 .content:after {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  bottom: -152px;
+}
+
+.coupang .section01 .content h2 {
+  font-size: 39px;
+  margin-bottom: 22px;
+  font-weight: 600;
+  word-break: keep-all;
+  line-height: 1.3;
+}
+
+.coupang .section01 .content p {
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: 300;
+  word-break: keep-all;
+}
+
+.coupang .section01 .content p strong {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.coupang .section01 .main-title h2 strong {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.coupang .section01 .main-title h2 span {
+  display: flex;
+  line-height: 0.8;
+}
+
+.coupang .section01 .main-title h2 span + img {
+  padding-top: 0px;
+}
+
+.coupang .section02 {
+  padding: 100px 0 115px 0;
+  background: #eff2f7;
+}
+
+.coupang .section02 .content ul li:nth-child(1) {
+  background: url(/images/coupang/coupangshipment01.png) no-repeat center / cover;
+}
+
+.coupang .section02 .content ul li:nth-child(2) {
+  background: url(/images/coupang/coupangshipment02.png) no-repeat center / cover;
+}
+
+.coupang .section02 .content ul li:nth-child(3) {
+  background: url(/images/coupang/coupangshipment03.png) no-repeat center / cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .coupang section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .coupang .section01 .content h2 {
+    font-size: 31px;
+  }
+
+    .section02 .main-title h2 {
+     padding-top: 30px;
+  }
+     
+
+
+  .coupang .section01 .content p {
+    font-size: 17px;
+  }
+  
+  .coupang .section01 .content {
+    border-radius: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .coupang .section01 .content h2 {
+    font-size: 28px;
+  }
+
+  .coupang .section01 .content p {
+    font-size: 14px;
+  }
+
+  .coupang .section01 .content {
+    border-radius: 20px;
+  }
+
+  .coupang .section02 {
+    padding: 70px 0;
+  }
+}

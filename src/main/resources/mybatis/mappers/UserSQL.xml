@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.mkm.mapper.UserMapper">
+    <select id="getUser" parameterType="string" resultType="userVo">
+        SELECT *
+          FROM membership
+         WHERE ID = #{id}
+    </select>
+
+    <select id="getUserWithProvider" parameterType="map" resultType="userVo">
+        SELECT *
+          FROM membership
+         WHERE ID = #{id}
+           AND PROVIDER = #{provider}
+    </select>
+
+    <select id="searchId" parameterType="userVo" resultType="string">
+        SELECT id
+          FROM membership
+         WHERE name = #{name}
+           AND email = #{email}
+    </select>
+
+    <select id="searchPassword" parameterType="userVo" resultType="string">
+        SELECT id
+          FROM membership
+         WHERE id = #{id}
+           AND email = #{email}
+    </select>
+
+    <insert id="insertUser" parameterType="userVo">
+        INSERT INTO membership
+        (
+            id,
+            password,
+            name,
+            phone,
+            email,
+            role,
+            emailYN,
+            smsYN,
+            created_date,
+            access_date,
+            serviceYN,
+            privacyYN
+
+            <if test="provider != null and provider != ''">
+                , provider
+            </if>
+        )
+
+        VALUES
+        (
+            #{id},
+            #{password},
+            #{name},
+            #{phone},
+            #{email},
+            'ROLE_USER',
+            #{emailYN},
+            #{smsYN},
+            NOW(),
+            NOW(),
+            #{serviceYN},
+            #{privacyYN}
+
+            <if test="provider != null and provider != ''">
+                , #{provider}
+            </if>
+        )
+    </insert>
+
+    <update id="updateUser" parameterType="userVo">
+        UPDATE membership
+           SET phone = #{phone},
+               email = #{email},
+               emailYN = #{emailYN},
+               smsYN = #{smsYN}
+               <if test="password != null and password != ''">
+                   ,password = #{password}
+               </if>
+         WHERE id = #{id}
+    </update>
+
+    <update id="updatePassword" parameterType="userVo">
+        UPDATE membership
+           SET password = #{password}
+         WHERE id = #{id}
+    </update>
+</mapper>

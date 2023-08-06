@@ -1,0 +1,183 @@
+.logistics .color {
+  color: var(--main-color);
+}
+
+.logistics .section01 {
+    padding-top: 50px;
+    padding-bottom: 85px;
+}
+
+.logistics .section01 .main-title h2 {
+    color: #222;
+    margin-top: 11px;
+    margin-bottom: 48px;
+}
+
+.logistics .section01 .content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 40px;
+  margin-bottom: 55px;
+}
+
+.logistics .section01 .content ul li {
+  padding: 37px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #eff2f7;
+  border-radius: 10px;
+}
+
+.logistics .section01 .content ul li h2 {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+
+.logistics .section01 .content ul li h2 strong {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.logistics .section01 .content .sub-text {
+    text-align: center;
+    font-size: 22px;
+    color: #222;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.logistics .section01 .content .sub-text strong {
+  font-weight: bold;
+}
+
+.logistics .section02 {
+  padding: 100px 0 115px 0;
+  background: #eff2f7;
+}
+
+.logistics .section02 .main-title h2 strong {
+  color: #222;
+}
+
+.cosmetics .section02 .content ul li:nth-child(1) {
+  background: url(/images/cosmetics/cosmetic04.png) no-repeat center / cover;
+}
+
+.cosmetics .section02 .content ul li:nth-child(2) {
+  background: url(/images/cosmetics/cosmetic05.png) no-repeat center / cover;
+}
+
+.cosmetics .section02 .content ul li:nth-child(3) {
+  background: url(/images/cosmetics/cosmetic06.png) no-repeat center / cover;
+}
+
+.cosmetics .section03.bottom-banner {
+  background-image: url(/images/cosmetics/cosmetic07.jpg);
+}
+
+
+.short-term .section02 .content ul li:nth-child(1) {
+  background: url(/images/short-term/crowdfunding04.png) no-repeat center / cover;
+}
+
+.short-term .section02 .content ul li:nth-child(2) {
+  background: url(/images/short-term/crowdfunding05.png) no-repeat center / cover;
+}
+
+.short-term .section02 .content ul li:nth-child(3) {
+  background: url(/images/short-term/crowdfunding06.png) no-repeat center / cover;
+}
+
+.short-term .section03.bottom-banner {
+  background-image: url(/images/short-term/crowdfunding07.jpg);
+}
+
+.short-term .section01 .content ul li h2 strong,
+.apparel .section01 .content ul li h2 strong {
+  flex-direction: row;
+  gap: 5px;
+}
+
+.short-term .content ul li div h3 span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 7px;
+  transform: translateY(-2px);
+  display: inline-block;
+}
+
+
+.apparel .section02 .content ul li:nth-child(1) {
+  background: url(/images/apparel/clothing04.png) no-repeat center / cover;
+}
+
+.apparel .section02 .content ul li:nth-child(2) {
+  background: url(/images/apparel/clothing05.png) no-repeat center / cover;
+}
+
+.apparel .section02 .content ul li:nth-child(3) {
+  background: url(/images/apparel/clothing06.png) no-repeat center / cover;
+}
+
+.apparel .section03.bottom-banner {
+  background-image: url(/images/apparel/clothing07.jpg);
+}
+
+@media screen and (max-width: 1300px) {
+  .logistics section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .logistics .section01 .content .sub-text {
+    font-size: 20px;
+  }
+  .logistics .section01 .content ul li {
+    padding: 24px 0;
+  }  
+
+  .logistics .section01 {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+  .logistics .section01 .content ul {
+    margin-bottom: 40px;
+    gap: 25px;
+}
+  
+  .bigger-slide .content ul + p {
+    margin-top: 45px;
+}
+
+  .bigger-slide .content {
+    margin-top: 35px;
+}
+  
+  .logistics .section01 .content ul li h2 {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logistics .section01 .content .sub-text {
+    font-size: 18px;
+  }
+
+  .logistics .section01 .content ul li h2 {
+    font-size: 24px;
+  }
+
+  .logistics .section02 {
+    padding: 35px 0  71px;
+  }
+}
+

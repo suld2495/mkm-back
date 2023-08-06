@@ -1,0 +1,6 @@
+*.properties
+*.jar
+*.class
+/target
+/.idea
+/src/test

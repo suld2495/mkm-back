@@ -1,0 +1,44 @@
+.estimate .step {
+  margin-top: 30px;
+  display: flex;
+  gap: 60px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #000;
+}
+
+.estimate .step > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.estimate .step > div span {
+  color: #969696;     
+}
+
+.estimate .step > div .active {
+  color: var(--main-color);
+}
+
+.estimate .step > div .active + span {
+  color: #222;
+}
+
+.estimate .step > div span:last-child {
+  position: relative;
+}
+
+.estimate .step > div:first-child span:last-child:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #222;
+  border-right: 2px solid #222;
+  transform: translateY(50%) rotate(45deg);
+  position: absolute;
+  bottom: 7px;
+  right: -32px;
+}

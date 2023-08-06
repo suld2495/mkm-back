@@ -1,0 +1,197 @@
+.fulfillment .main-title h2 {
+  color: #222;
+  margin-top: 13px;
+}
+
+.fulfillment .section01 .main-title h2 .color {
+  color: var(--main-color);
+  margin-right: 5px;
+}
+
+.fulfillment .section03 .main-title h2 .color {
+  margin-left: 5px;
+}
+
+.fulfillment .main-title .sub-text {
+  margin-top: 22px;
+  color: #222;
+}
+
+.fulfillment .section01 {
+  padding-top: 50px;
+  padding-bottom: 85px;
+}
+
+.fulfillment .section02 {
+  background: #eff2f7;
+  padding: 90px 0 118px;
+}
+
+.fulfillment .section02 .content {
+  margin-top: 50px;
+}
+
+.fulfillment .section02 ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.fulfillment .section02 ul img {
+  width: 100%;
+}
+
+.fulfillment .section02 .txt {
+  height: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-size: 23px;
+  gap: 5px;
+  letter-spacing: -1px;
+}
+
+.fulfillment .section02 .txt strong {
+  font-weight: bold;
+}
+
+.fulfillment .section02 .img {
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+.fulfillment .section02 .img img {
+  transition: all 0.9s ease;
+}
+
+.fulfillment .section02 .img:hover img {
+  transform: scale(1.1);
+}
+
+.fulfillment .section03 {
+  padding: 95px 0 100px;
+}
+
+.fulfillment .section03 .main-title h2 {
+  margin-top: 0;
+}
+
+.fulfillment .section03 .main-title .sub-text {
+  margin-top: 21px;
+}
+
+.fulfillment .section03 .content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 35px;
+  margin-top: 58px;
+}
+
+.fulfillment .section03 .content li {
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  padding: 35px 41px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.fulfillment .section03 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #222;
+}
+
+.fulfillment .section03 .header span {
+  transition: all 0.3s ease;
+}
+
+.fulfillment .section03 .header span:first-child {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fulfillment .section03 .header span:last-child {
+  padding: 18px 0;
+  background: #f4f5f7;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
+
+.fulfillment .section03 .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fulfillment .section03 .list div {
+  padding: 3px 0;
+  padding-left: 33px;
+  font-size: 18px;
+  background-image: url(/images/fulfillment/check_icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.fulfillment .section03 .content li.active {
+  border: 1px solid var(--main-color);
+  
+}
+
+.fulfillment .section03 .content li.active span {
+  color: var(--main-color);   
+}
+
+.fulfillment .section03 .content li.active span:last-child {
+  background: #ecf6ff;
+}
+
+.fulfillment .section03 .content li.active .list div {
+  background-image: url(/images/fulfillment/check_icon_over.png);
+}
+
+
+.fulfillment .bottom-banner {
+  padding: 80px 0 65px;
+  background-image: url(/images/fulfillment/fulfillment05.png)
+}
+
+@media screen and (max-width: 1300px) {
+  .fulfillment section {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fulfillment .section02 .txt {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .fulfillment .section02 ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fulfillment .section02 .txt {
+    font-size: 17px;
+  }
+
+  .fulfillment .section02 {
+    padding: 70px 0;
+  }
+
+  .fulfillment .section03 {
+    padding: 70px 0;
+  }
+}

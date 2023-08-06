@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.mkm.mapper.ClientMapper">
+    <insert id="saveCounseling" parameterType="counselingVo">
+        INSERT INTO mkmcorp.counseling
+            (company, name, phone, email, product, content, agree)
+        VALUES(#{company}, #{name}, #{phone}, #{email}, #{productStr}, #{content}, #{agreeYN});
+    </insert>
+
+    <insert id="saveEstimate" parameterType="estimateVo">
+        INSERT INTO mkmcorp.estimate
+        (company, name, phone, email, product, content, agree, producttype, storage, count, pallettrack, lightweightrack, box, import1, export, delivery, sku, deliveryType, processing, aircap, return1)
+        VALUES(#{company}, #{name}, #{phone}, #{email}, #{productStr}, #{content}, #{agreeYN}, #{producttype}, #{storageStr}, #{count}, #{pallettrack}, #{lightweightrack}, #{box}, #{import1}, #{export}, #{delivery}, #{sku}, #{deliveryType}, #{processing}, #{aircap}, #{return1});
+    </insert>
+</mapper>
