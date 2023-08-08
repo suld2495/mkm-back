@@ -55,11 +55,12 @@
 
 .logistics .section01 .content .sub-text strong {
   font-weight: bold;
+  margin-right: 6px;
 }
 
 .logistics .section02 {
   padding: 100px 0 115px 0;
-  background: #eff2f7;
+  background: #f4f4f4;
 }
 
 .logistics .section02 .main-title h2 strong {
@@ -129,6 +130,11 @@
 .apparel .section03.bottom-banner {
   background-image: url(/images/apparel/clothing07.jpg);
 }
+
+.short-term .bigger-slide .content ul + p strong {
+  margin-left: 4px;
+}
+
 
 @media screen and (max-width: 1300px) {
   .logistics section {

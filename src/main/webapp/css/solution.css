@@ -15,8 +15,13 @@
   margin-top: 22px;
 }
 
+
+.solution .section01 .main-title h2 strong {
+  margin-left: 8px;
+}
+
 .solution .section02 .main-title .color {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .solution .section02 {
@@ -28,6 +33,11 @@
   margin-top: 60px;
   display: flex;
   gap: 55px;
+}
+
+
+.solution .section06 .main-title h2 strong {
+  margin-left: 5px;
 }
 
 .solution .section02 .content ul li {
@@ -111,7 +121,7 @@
 }
 
 .solution .section03 .main-title .color {
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 .solution .section03 .main-title p {

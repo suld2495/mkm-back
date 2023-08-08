@@ -18,7 +18,7 @@ public class ClientServiceImpl implements ClientService {
     @Autowired
     private ClientMapper clientMapper;
 
-    private String emailfrom = "suld7777@gmail.com";
+    private String emailfrom = "rh.kim@deful.co.kr";
     private String company = "엠케이엠 풀필먼트";
     private String color = "01adfe";
 

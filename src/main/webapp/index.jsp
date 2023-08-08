@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/images/fa_mkm.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,11 +21,13 @@
     <link rel="stylesheet" href="/css/estimate.css">
     <link rel="stylesheet" href="/css/solution.css">
     <title>엠케이엠 </title>
-    <script type="module" crossorigin src="/assets/index-cb03f38e.js"></script>
+    <script type="module" crossorigin src="/assets/index-500460ef.js"></script>
     <link rel="stylesheet" href="/assets/index-8116745d.css">
-</head>
-<body>
-<div id="root"></div>
-
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
 </html>
+
+
