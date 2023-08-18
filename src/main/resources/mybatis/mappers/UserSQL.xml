@@ -88,4 +88,18 @@
            SET password = #{password}
          WHERE id = #{id}
     </update>
+
+    <update id="insertRefreshToken" parameterType="string">
+        UPDATE user
+           SET refresh = #{refresh}
+    </update>
+
+    <update id="deleteRefreshToken">
+        UPDATE user
+           SET refresh = ''
+    </update>
+
+    <select id="getRefreshToken" resultType="string">
+        select refresh from user
+    </select>
 </mapper>

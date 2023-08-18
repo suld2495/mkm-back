@@ -205,6 +205,8 @@ header.header .line-btn:hover span:nth-child(2) {
   justify-content: center;
   position: relative;
   align-items: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .sub-banner .pc h1 {

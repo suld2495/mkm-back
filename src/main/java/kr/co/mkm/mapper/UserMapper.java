@@ -20,4 +20,10 @@ public interface UserMapper {
     String searchPassword(UserVo userVo) throws Exception;
 
     void updatePassword(UserVo userVo) throws Exception;
+
+    void insertRefreshToken(String refresh);
+
+    void deleteRefreshToken();
+
+    String getRefreshToken();
 }

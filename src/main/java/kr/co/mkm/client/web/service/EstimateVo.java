@@ -29,6 +29,16 @@ public class EstimateVo {
 
     private String agreeYN;
 
+    private int seq;
+
+    public int getSeq() {
+        return seq;
+    }
+
+    public void setSeq(int seq) {
+        this.seq = seq;
+    }
+
     public String getAgreeYN() {
         return agreeYN;
     }

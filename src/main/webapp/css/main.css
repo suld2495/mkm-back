@@ -124,6 +124,7 @@
   animation-direction: alternate;
   background-size: contain;
   background-position-y: 20px;
+  background-position-x: center;
 }
 
 .main .section01 .main-title h2 {
@@ -713,7 +714,7 @@
   
   .main .main-title h2,
   .main .section05 .center strong {
-    font-size: 27px !important;
+    font-size: 31px !important;
   }
 
   .main .section04 .main-title h2 {

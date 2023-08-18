@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.mail.internet.MimeMessage;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -226,5 +227,25 @@ public class ClientServiceImpl implements ClientService {
         } catch (Exception var9) {
             return false;
         }
+    }
+
+    @Override
+    public List<CounselingVo> getCounselingList() {
+        return clientMapper.getCounselingList();
+    }
+
+    @Override
+    public CounselingVo getCounseling(String id) throws Exception {
+        return clientMapper.getCounseling(id);
+    }
+
+    @Override
+    public List<EstimateVo> getEstimateList() {
+        return clientMapper.getEstimateList();
+    }
+
+    @Override
+    public EstimateVo getEstimate(String id) throws Exception {
+        return clientMapper.getEstimate(id);
     }
 }

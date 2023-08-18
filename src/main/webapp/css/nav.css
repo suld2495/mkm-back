@@ -13,14 +13,14 @@
 .gnbList > li > a{position:relative;display:block;float:left;color:#fff;font-size:48px;font-weight:600;text-decoration: none;}
 .gnbList li a:hover{text-decoration:none}
 .gnbList > li.gnb03 > a{}
-.gnbList > li.gnbON > a, .gnbList > li:hover > a{color: #00acfe;}
+.gnbList > li.gnbON > a, .gnbList > li:hover > a{color: var(--main-color);}
 .gnbList li .subGnb{position:relative;overflow:hidden;display: flex;float:left;height:95px;padding:10px 0 10px 0;transition:1s;-webkit-transition:1s;opacity:0;z-index:0;margin-left: 40px;}
 .gnbList li .subGnb ul{display:inline-block;padding-left:6px}
 .gnbList li .subGnb *{vertical-align:top}
-.gnbList li .subGnb:before{content:'';display:inline-block;width:171px;height:2px;margin-top:40px;background:#00acfe}
+.gnbList li .subGnb:before{content:'';display:inline-block;width:171px;height:2px;margin-top:40px;background: var(--main-color);}
 .gnbList > li .subGnb ul li{float:left}
 .gnbList > li .subGnb ul li a{height:75px;padding:1px 12px 0;color:rgba(255,255,255,1);font-size:18px;font-weight:500;line-height:79px}
-.gnbList > li .subGnb ul li.subON a, .gnbList > li .subGnb ul li a:hover{color:#00acfe;}
+.gnbList > li .subGnb ul li.subON a, .gnbList > li .subGnb ul li a:hover{color:var(--main-color);}
 .gnbList > li .subGnb ul li.subON a{font-weight:600}
 .gnbList li:hover .subGnb, .gnbList > li.gnbON .subGnb {opacity:1;z-index:100}
 .gnbList > li.gnbON a + .subGnb{z-index:0}

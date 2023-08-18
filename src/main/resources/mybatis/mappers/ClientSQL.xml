@@ -13,4 +13,24 @@
         (company, name, phone, email, product, content, agree, producttype, storage, count, pallettrack, lightweightrack, box, import1, export, delivery, sku, deliveryType, processing, aircap, return1)
         VALUES(#{company}, #{name}, #{phone}, #{email}, #{productStr}, #{content}, #{agreeYN}, #{producttype}, #{storageStr}, #{count}, #{pallettrack}, #{lightweightrack}, #{box}, #{import1}, #{export}, #{delivery}, #{sku}, #{deliveryType}, #{processing}, #{aircap}, #{return1});
     </insert>
+
+    <select id="getCounselingList" resultType="counselingVo">
+        select *, product as productStr from mkmcorp.counseling
+        order by seq desc
+    </select>
+
+    <select id="getCounseling" parameterType="string" resultType="counselingVo">
+        select *, product as productStr from mkmcorp.counseling
+        where seq = #{id}
+    </select>
+
+    <select id="getEstimateList" resultType="estimateVo">
+        select *, product as productStr, storage as storageStr from mkmcorp.estimate
+        order by seq desc
+    </select>
+
+    <select id="getEstimate" parameterType="string" resultType="estimateVo">
+        select *, product as productStr, storage as storageStr from mkmcorp.estimate
+        where seq = #{id}
+    </select>
 </mapper>

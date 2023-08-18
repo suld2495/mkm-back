@@ -22,13 +22,15 @@
         <typeAlias alias="userVo" type="kr.co.mkm.login.service.UserVo"/>
         <typeAlias alias="counselingVo" type="kr.co.mkm.client.web.service.CounselingVo"/>
         <typeAlias alias="estimateVo" type="kr.co.mkm.client.web.service.EstimateVo"/>
-<!--        <typeAlias alias="pagingVo" type="kr.co.mkm.board.service.PagingVo"/>-->
-<!--        <typeAlias alias="boardVo" type="kr.co.mkm.board.service.BoardVo"/>-->
+        <typeAlias alias="visitVo" type="kr.co.mkm.visit.service.VisitVo"/>
+        <typeAlias alias="searchVisit" type="kr.co.mkm.visit.service.SearchVisit"/>
+        <typeAlias alias="searchResult" type="kr.co.mkm.visit.service.SearchResult"/>
+        <typeAlias alias="user" type="kr.co.mkm.login.service.User"/>
     </typeAliases>
 
     <mappers>
-<!--        <mapper resource="mybatis/mappers/BoardSQL.xml"/>-->
         <mapper resource="mybatis/mappers/UserSQL.xml"/>
         <mapper resource="mybatis/mappers/ClientSQL.xml"/>
+        <mapper resource="mybatis/mappers/VisitSQL.xml"/>
     </mappers>
 </configuration>

@@ -4,3 +4,7 @@
 /target
 /.idea
 /src/test
+/src/main/webapp/assets
+/src/main/webapp/css
+/src/main/webapp/images
+/src/main/webapp/videos

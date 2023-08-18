@@ -12,4 +12,10 @@ public interface LoginService {
     String searchPassword(UserVo userVo) throws Exception;
 
     void updatePassword(UserVo userVo) throws Exception;
+
+    void insertRefreshToken(String refresh) throws Exception;
+
+    void deleteRefreshToken();
+
+    String getRefreshToken();
 }

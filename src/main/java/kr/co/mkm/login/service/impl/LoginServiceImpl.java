@@ -41,4 +41,19 @@ public class LoginServiceImpl implements LoginService {
     public void updatePassword(UserVo userVo) throws Exception {
         userMapper.updatePassword(userVo);
     }
+
+    @Override
+    public void insertRefreshToken(String refresh) throws Exception {
+        userMapper.insertRefreshToken(refresh);
+    }
+
+    @Override
+    public void deleteRefreshToken() {
+        userMapper.deleteRefreshToken();
+    }
+
+    @Override
+    public String getRefreshToken() {
+        return userMapper.getRefreshToken();
+    }
 }
