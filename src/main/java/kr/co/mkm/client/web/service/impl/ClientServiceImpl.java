@@ -90,10 +90,7 @@ public class ClientServiceImpl implements ClientService {
         map.put("subject", "[" + company + "] 간편 상담");
         boolean check = emailSend(map);
 
-        if (check) {
-            clientMapper.saveCounseling(vo);
-        }
-
+        clientMapper.saveCounseling(vo);
         return check;
     }
 
@@ -202,10 +199,7 @@ public class ClientServiceImpl implements ClientService {
         map.put("subject", "[" + company + "] 물류 견적 상담");
         boolean check = emailSend(map);
 
-        if (check) {
-            clientMapper.saveEstimate(vo);
-        }
-
+        clientMapper.saveEstimate(vo);
         return check;
     }
 
